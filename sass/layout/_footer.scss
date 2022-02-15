@@ -1,0 +1,199 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--background-footer);
+}
+
+.logo-footer {
+    display: block;
+    margin-bottom: 20px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo-studio-footer {
+    color: var(--logo-studio-footer);
+}
+
+.address,
+.footer-mail {
+    margin-bottom: 9px;
+}
+
+.address,
+.footer-mail,
+.footer-tell {
+    display: block;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* Цвета как на макете */
+.address {
+    color: var(--project-background);
+}
+
+.footer-mail,
+.footer-tell {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #ffffff99;
+}
+
+/* -social-link-- */
+.container-social-footer {
+    margin-right: 93px;
+}
+
+.container-flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.container-link-footer {
+    margin-right: 70px;
+}
+
+.footer-social-title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0, 87;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.footer-social-list {
+    display: flex;
+}
+
+.link-social-footer {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: var(--bacground-social-footer);
+    color: var(--footer-social-icon);
+}
+
+.footer-social-item + .footer-social-item {
+    margin-left: 10px;
+}
+
+.footer-social-icon {
+    fill: currentColor;
+}
+
+.link-social-footer:hover,
+.link-social-footer:focus {
+    background-color: var(--bacground-social-hover);
+}
+
+/* ------footer-folow-------------------- */
+.footer-form {
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer-form-line {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    margin-bottom: 20px;
+}
+
+.footer-input {
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    padding: 15px;
+
+    color: var(--footer-social-icon);
+    background-color: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input:focus {
+    border: 1px solid var(--brand-color);
+}
+
+.footer-input:focus-visible {
+    border: 1px solid var(--brand-color);
+    outline: transparent;
+}
+
+.footer-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-footer-submit {
+    min-width: 200px;
+    height: 50px;
+
+    padding: 10px 29px;
+
+    border: transparent;
+    border-radius: var(--border-btn-radius);
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    color: var(--project-background);
+    background-color: var(--brand-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-footer-submit:hover,
+.btn-footer-submit:focus {
+    background-color: #188ce8;
+}
+
+.btn-footer-icon {
+    fill: currentColor;
+}
+
+.btn-footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

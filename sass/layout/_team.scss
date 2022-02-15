@@ -1,0 +1,54 @@
+.about-team-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--text-black);
+}
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--bacground-team-section);
+}
+
+.team-list {
+    display: flex;
+}
+
+.item-teammate {
+    box-shadow: var(--shadow-team-card);
+    background-color: #ffffff;
+}
+
+.item-teammate + .item-teammate {
+    margin-left: 30px;
+}
+
+.teammate-name {
+    margin-bottom: 10px;
+
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    color: var(--text-black);
+}
+
+.teammate-profession {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    color: var(--text-gray);
+}
