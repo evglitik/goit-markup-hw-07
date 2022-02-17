@@ -1,6 +1,11 @@
 @import "./base/common";
 @import "./base/reset";
 
+@import "./utils/hidden";
+@import "./utils/vars";
+@import "./utils/placeholder";
+@import "./utils/mixins";
+
 @import "./components/container";
 @import "./components/modal";
 
@@ -13,6 +18,3 @@
 @import "./layout/portfolio-page";
 @import "./layout/team-social-link";
 @import "./layout/team";
-
-@import "./utils/hidden";
-@import "./utils/vars";

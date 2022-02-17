@@ -1,21 +1,20 @@
 .about {
-    padding-top: 47px;
-    padding-bottom: 94px;
+    @include section-pading(47px, 94px)
 }
 
 .about-list {
     display: flex;
 }
 
-.about-item + .about-item {
+.about-list__item + .about-list__item {
     margin-left: 30px;
 }
 
-.about-tumb {
+.about-list__tumb {
     position: relative;
 }
 
-.about-text-container {
+.about-list__text-container {
     position: absolute;
     bottom: 0;
 
@@ -25,19 +24,21 @@
     background-color: var(--bacground-about-text);
 }
 
-.about-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.about__title {
+    margin-bottom: 50px;
+
+    @include font(700, 36px, 1.17, 0.03em );
+    text-align: center;
+    color: var(--text-black);
+}
+
+.about-list__text {
+    @extend %absolute-centr;
 
     width: 100%;
 
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 0.87;
+    @include font(700, 14px, 0.87, 0.03em );
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 
     color: #ffffff;

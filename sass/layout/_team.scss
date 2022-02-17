@@ -1,18 +1,12 @@
-.about-team-title {
+.team__title {
     margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    @include font(700, 36px, 1.17, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
-
     color: var(--text-black);
 }
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include section-pading() 
     background-color: var(--bacground-team-section);
 }
 
@@ -20,35 +14,31 @@
     display: flex;
 }
 
-.item-teammate {
+.team-list__item {
     box-shadow: var(--shadow-team-card);
     background-color: #ffffff;
 }
 
-.item-teammate + .item-teammate {
+.team-list__item + .team-list__item {
     margin-left: 30px;
 }
 
-.teammate-name {
+.team-list__text-tumb {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-list__name {
     margin-bottom: 10px;
-
     font-family: Roboto;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
+    @include font(500, 16px, 1.9, 0.03em);
     text-align: center;
-
     color: var(--text-black);
 }
 
-.teammate-profession {
+.team-list__profession {
     margin-bottom: 16px;
-
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
+    @include font(null, 16px, 1.9, 0.03em);
     text-align: center;
-
     color: var(--text-gray);
 }

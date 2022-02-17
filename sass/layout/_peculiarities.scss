@@ -1,22 +1,21 @@
 .peculiarities {
-    padding-top: 94px;
-    padding-bottom: 47px;
+    @include section-pading(94px, 47px)
 }
 
 .peculiarites-list {
     display: flex;
 }
 
-.peculiarity-item {
+.peculiarites-list__item {
     width: calc(100% - 30px / 4);
     flex-wrap: wrap;
 }
 
-.peculiarity-item + .peculiarity-item {
+.peculiarites-list__item + .peculiarites-list__item {
     margin-left: 30px;
 }
 
-.container-peculiarites-svg {
+.peculiarites__container-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,22 +25,17 @@
     background-color: #f5f4fa;
 }
 
-.peculiarity-title {
-    margin-bottom: 10px;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.4;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-
-    color: var(--text-black);
-}
-
-.peculiarity-text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+.peculiarites-list__text {
+    @include font(null, 14px, 1.71, 0.03em );
 
     color: var(--text-gray);
+}
+
+.peculiarites-list__title {
+    margin-bottom: 10px;
+
+    @include font(700, 14px, 1.4, 0.03em );
+    text-transform: uppercase;
+
+    color: var(--text-black);
 }

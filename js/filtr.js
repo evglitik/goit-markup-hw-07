@@ -1,6 +1,6 @@
 function app() {
-    const buttons = document.querySelectorAll('.btn-filtr')
-    const cards = document.querySelectorAll('.gallery-item')
+    const buttons = document.querySelectorAll('.filtr-list__btn')
+    const cards = document.querySelectorAll('.gallery-list__item')
 
     function filter (category, items) {
         items.forEach((item) => {

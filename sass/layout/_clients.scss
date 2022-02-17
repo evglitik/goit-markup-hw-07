@@ -1,16 +1,11 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include section-pading()
 }
 
-.clients-title {
+.clients__title {
     margin-bottom: 50px;
     text-align: center;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
+    @include font(700, 36px, 1.16, 0.03em );
 }
 
 .clients-list {
@@ -18,11 +13,11 @@
     flex-wrap: wrap;
 }
 
-.clients-item + .clients-item {
+.clients-list__item + .clients-list__item {
     margin-left: 30px;
 }
 
-.clients-link {
+.clients-list__link {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -36,14 +31,14 @@
     border-color: var(--clients-color);
     border-radius: 4px;
     color: var(--clients-color);
+
+    &:hover,
+    &:focus {
+        border-color: var(--clients-hover);
+        color: var(--clients-hover);
+    }
 }
 
-.clients-icon {
+.clients-list__icon {
     fill: currentColor;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-    border-color: var(--clients-hover);
-    color: var(--clients-hover);
 }

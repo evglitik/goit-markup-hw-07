@@ -4,31 +4,30 @@
 
 .logo-header {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
+    @include section-pading(24px, 25px)
 
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include font(700, 26px, 1.19, 0.03em );
     text-decoration: none;
-    .logo-web {
+    &__text {
         color: var(--logo-web);
     }
-    .logo-studio {
+    &__text--darck {
         color: var(--logo-studio);
     }
 }
 
+.header__logo {
+    margin-right: 93px;
+}
+
 /* ----------------------------NAVIGATION */
-.nav-container--flex {
+.header__container {
     display: flex;
     align-items: center;
 }
 
-.header-item + .header-item {
+.header-list__item + .header-list__item {
     margin-left: 50px;
 }
 
@@ -36,7 +35,7 @@
     margin-left: auto;
 }
 
-.contact-item + .contact-item {
+.header-contact-list__item + .header-contact-list__item {
     margin-left: 50px;
 }
 
@@ -44,13 +43,10 @@
 .header-contact-list {
     display: flex;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font(500, 14px, 1.14, 0.02em );
 }
 
-.header-link {
+.header-list__link {
     position: relative;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -66,7 +62,7 @@
     }
 }
 
-.navi-interactiv-line::after {
+.header-list__link--interactiv-line::after {
     content: '';
     display: block;
     width: 100%;
@@ -79,7 +75,7 @@
 }
 
 /* ----------------------------CONTACT */
-.header-mail {
+.header-contact-list__mail {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     display: flex;
@@ -93,7 +89,7 @@
 }
 }
 
-.header-tell {
+.header-contact-list__tell {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     display: flex;
@@ -107,13 +103,13 @@
     }
 }
 
-.contact-item {
+.header-contact-list__item {
     display: flex;
     align-items: center;
 }
 
-.heder-mail-svg,
-.heder-tel-svg {
+.header-contact-list__icon-tel,
+.header-contact-list__icon-mail {
     margin-right: 10px;
     fill: currentColor;
 }

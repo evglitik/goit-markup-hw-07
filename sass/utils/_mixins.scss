@@ -1,0 +1,11 @@
+@mixin font($fwgt, $fsze, $lhgt, $lsng) {
+    font-weight: $fwgt;
+    font-size: $fsze;
+    line-height: $lhgt;
+    letter-spacing: $lsng;
+}
+
+@mixin section-pading($ptp:94px, $pbt:94px) {
+    padding-top: $ptp;
+    padding-bottom: $pbt;
+}
